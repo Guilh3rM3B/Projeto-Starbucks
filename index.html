@@ -41,8 +41,8 @@
 
         </div>
         <ul class="thumb">
-            <li><img src="imagens/frape2.png" width="155">
-            <li><img src="imagens/starbucks_unicorn.png" width="155">
+            <li><img src="imagens/frape2.png" onclick="changeCircleColor('#017143')" width="155">
+            <li><img src="imagens/starbucks_unicorn.png" onclick="changeCircleColor('#EB7495')" width="155">
         </ul>
         <ul class="sci">
             <li><a href="#"><img src="imagens/twitter.png" width="32" alt=""></a>
@@ -57,6 +57,12 @@
             function imgSlider(anything) {
                 document.querySelector('starbucks')
             }
+
+            function changeCircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color
+            }
+
     </script>
 
 </body>
